@@ -1,0 +1,13 @@
+{
+    "name": "formation/project-slim",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Michel RIOU",
+            "email": "michel.riou@laposte.net"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.9"
+    }
+}
