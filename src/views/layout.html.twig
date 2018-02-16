@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>{% block pageTitle %}Mon Site{% endblock %}</title>
+    <meta charset="utf-8">
+    {% block css %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+    {% endblock %}
+</head>
+<body class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
+            {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>

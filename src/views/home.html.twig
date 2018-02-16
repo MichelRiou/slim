@@ -1,0 +1,24 @@
+{% extends "layout.html.twig" %}
+
+{% block pageTitle %}{{ parent() }}::Ma page {% endblock %}
+
+{% block content %}
+{% if name is defined %}
+<h1>Hello {{ name }}</h1>
+{% endif %}
+<ul>
+    {% for item in products %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+Il y a {{ books|length }} livres(s)
+<table class="table table-bordered">
+    {%  for book in books %}
+    <tr>
+        <td>{{ book.title}}</td>
+        <td>{{ book.author}}</td>
+        <td>{{ book.genre}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
