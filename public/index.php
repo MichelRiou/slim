@@ -88,6 +88,7 @@ $app->get("/products/all",
         ];
         return $response->withJson($data);
     });
+$app->get("/home/test", \m2i\slim\controllers\HomeController::class . ":index");
 
 //Lancement du framwork
 $app->run();
